@@ -11,7 +11,7 @@ Obs.: baixar arquivos de áudio e um vídeo curtos (menos de 10 MB).
 Use o atributo controls para exibir os botões de reprodução;
 
 
-5. Adicione uma imagem de capa (poster) que apareça antes da execução do vídeo;
+
 6. Configure o vídeo para iniciar automaticamente, sem som (muted) e repetindo (loop);
 7. Monte uma página completa utilizando tags semânticas (<header>, <main>,
 <section>, <article>, <footer>) com:
@@ -83,14 +83,33 @@ progresso (controls);-->
             <track src="legenda.vtt" kind="none" srclang="pt" label="Português">
             Seu navegador não suporta o elemento de vídeo.
         </video>
-
-        <button onclick="document.getElementById('Angry-Grandpa-Shouts-OH-HELL-NAH').play()">Play</button>
-
     </figure>
 
-    
+    <button onclick="playPause()">Play/Pause</button>
+
+  <!-- Botão para mostrar/esconder controles -->
+    <button onclick="toggleControles()">Mostrar/Ocultar Barra</button>
+
+    <script>
+    const video = document.getElementById("meuVideo");
+
+    function playPause() {
+        if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function toggleControles() {
+      if (video.hasAttribute("controls")) {
+        video.removeAttribute("controls");
+      } else {
+        video.setAttribute("controls", "controls");
+      }
+    }
+    </script>
 
 </body>
-
 </html>
 
