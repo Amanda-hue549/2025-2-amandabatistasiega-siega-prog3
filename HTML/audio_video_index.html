@@ -75,15 +75,17 @@ compatibilidade entre navegadores;-->
 <!--Crie uma página que exiba o vídeo escolhido com botões de play/pause e barra de
 progresso (controls);-->
 <body>
-    <h3>Áudio da questão 4 - Spider man.</h3>
+    <h3>Vídeo da questão 4 - Spider man.</h3>
     <figure>
-        <video controls width="480" poster="capa-video.png">
+        <video controls width="480" poster="hq720.jpg" preload="none" onclick="this.play()">
             <source src="Angry-Grandpa-Shouts-OH-HELL-NAH.mp4" type="video/mp4">
             <source src="Angry-Grandpa-Shouts-OH-HELL-NAH.webm" type="video/webm">
             <track src="legenda.vtt" kind="none" srclang="pt" label="Português">
-
             Seu navegador não suporta o elemento de vídeo.
         </video>
+
+        <button onclick="document.getElementById('Angry-Grandpa-Shouts-OH-HELL-NAH').play()">Play</button>
+
     </figure>
 
     
