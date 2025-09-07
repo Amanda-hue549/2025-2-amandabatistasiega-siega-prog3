@@ -9,13 +9,8 @@ Sugestão: download de arquivos pequenos:
 Obs.: baixar arquivos de áudio e um vídeo curtos (menos de 10 MB).
 1. Crie uma página HTML com um player de áudio que carregue o arquivo escolhido.
 Use o atributo controls para exibir os botões de reprodução;
-2. Adapte o exercício anterior para que o áudio seja executado automaticamente e em
-loop Observação: alguns navegadores bloqueiam autoplay com som, se isso ocorrer,
-usem muted autoplay;
-3. Adicione duas versões do mesmo áudio (por exemplo, .mp3 e .ogg) para aumentar a
- compatibilidade entre navegadores;
-4. Crie uma página que exiba o vídeo escolhido com botões de play/pause e barra de
-progresso (controls);
+
+
 5. Adicione uma imagem de capa (poster) que apareça antes da execução do vídeo;
 6. Configure o vídeo para iniciar automaticamente, sem som (muted) e repetindo (loop);
 7. Monte uma página completa utilizando tags semânticas (<header>, <main>,
@@ -25,9 +20,10 @@ progresso (controls);
 ➢ Uma seção de vídeos com <video>
 ➢ Um <footer> com créditos (fonte dos arquivos).
 -->
-    
+<!--1-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,11 +36,51 @@ progresso (controls);
     </header>
 
     <article class="info">
-        <h3>Áudio.</h3>
+<!--Article representa um conteúdo que é completo e independente dentro de um documento, aplicativo ou site-->
+<!--Class=info é um atributo que permite agrupar esse artigo com outros elementos que tenham a mesma característica "info"-->
+        <h3>Áudio questão 1 - elevador music sound.</h3>
         <audio controls>
-            <source src="/467243__jay_you__music-elevator-ext-part-13.wav" type="áudios/wav">
+            <source src="467243__jay_you__music-elevator-ext-part-13.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
         </audio>
     </article>
 </body>
+
+<!--2-->
+<!--Adapte o exercício anterior para que o áudio seja executado automaticamente e em
+loop Observação: alguns navegadores bloqueiam autoplay com som, se isso ocorrer,
+usem muted autoplay;-->
+
+<body>
+    <h3>Áudio questão 2 - CNPjoto.</h3>
+    <audio controls autoplay muted loop>
+        <source src="calma-cnpjoto-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+</body>
+<!--3-->
+<!--Adicione duas versões do mesmo áudio (por exemplo, .mp3 e .ogg) para aumentar a
+compatibilidade entre navegadores;-->
+<body>
+    <h3>Áudio da questão 3 - Cariani.</h3>
+    <audio controls>
+        <source src="maldito-homem-que-acredita-cariani_060937.ogg" type="audio/ogg">
+        <source src="maldito-homem-que-acredita-cariani_060937.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+</body>
+
+<!--4-->
+<!--Crie uma página que exiba o vídeo escolhido com botões de play/pause e barra de
+progresso (controls);-->
+<body>
+    <h3>Áudio da questão 4 - The cat from Ipanema.</h3>
+    <audio controls>
+        <source scr="the_cat_from_ipanema.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+</body>
+
 </html>
+
