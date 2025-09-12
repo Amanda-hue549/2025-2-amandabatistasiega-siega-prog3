@@ -1,29 +1,373 @@
 <!DOCTYPE html>
-
-<html lang= "PT-br">
+<html lang="pt-br">
     <head>
-        <meta charset="UFT-8">
-        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>LISTA TABELA</title>
-    
-
+        <title>Document</title>
     </head>
 
-    <body> 
-        <header> 
-            <h1>Lista de tabela</h1>
+    <body>
+        <header>
+            <h1>
+                Lista de exercícios - HTML   <code> &lt;table&gt; </code> 
+            </h1>  
+            <p>
+                Abaixo layout das tabelas a serem implemetadas
+            </p> 
         </header>
 
         <main>
-            
-            <article>
+            <section>
                 <h2>
-                    Sobre a internet.
+                    01. tabela 3x3
                 </h2>
-                
+                <article>
+                    <table>
+                        <caption>
+                            Contatos
+                        </caption>
+                        <thead> 
+                            <tr>
+                                <th scope="col">&brvbar; Nome &brvbar;</th>
+                                <th scope="col">&brvbar; Cidade &brvbar;</th>
+                                <th scope="col">&brvbar; Telefone &brvbar;</th>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Bruna &brvbar;</td>
+                                <td>&brvbar; Recife &brvbar;</td>
+                                <td> &brvbar;(081) 3333-0003 &brvbar;</td>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Diego &brvbar;</td>
+                                <td>&brvbar; Belém &brvbar;</td>
+                                <td> &brvbar;(091) 2222-0002 &brvbar;</td>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Lia &brvbar;</td>
+                                <td>&brvbar; Curitiba &brvbar;</td>
+                                <td> &brvbar;(041) 1111-0001 &brvbar;</td>
+                            </tr>
+            
+                        </thead>
 
+                    </table>
+                </article>
+            <h2>
+                02. tabela com caption, thead e tbody
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                    
+                        Tabela de Cursos Ofertados
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&brvbar; Curso &brvbar;</th>
+                            <th scope="col">&brvbar; Modalidade &brvbar;</th>
+                            <th scope="col">&brvbar; Carga Horária (h) &brvbar;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&brvbar; Rede de Computadores &brvbar;</td>
+                            <td>&brvbar; Presencial &brvbar;</td>
+                            <td>&brvbar; 80 &brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar; Desenvolvimento de Sistemas &brvbar;</td>
+                            <td>&brvbar; Híbrido &brvbar;</td>
+                            <td>&brvbar; 100 &brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar; Informática Básica &brvbar;</td>
+                            <td>&brvbar; Remoto &brvbar;</td>
+                            <td>&brvbar; 40 &brvbar;</td>
+                            
+                        </tr>
+                    
+                    </tbody>
+                    
+                </table>
+                <h2>
+                03. tabela com tfoot (totais)
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                        Resumo de Vendas (Unidades)
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Jan</th>
+                            <th scope="col">Fev</th>
+                            <th scope="col">Mar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&brvbar;Teclado&brvbar;</td>
+                            <td>&brvbar;25&brvbar;</td>
+                            <td>&brvbar;30&brvbar;</td>
+                            <td>&brvbar;28&brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar;Mouse&brvbar;</td>
+                            <td>&brvbar;40&brvbar;</td>
+                            <td>&brvbar;38&brvbar;</td>
+                            <td>&brvbar;45&brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar;Headset&brvbar;</td>
+                            <td>&brvbar;18&brvbar;</td>
+                            <td>&brvbar;22&brvbar;</td>
+                            <td>&brvbar;19&brvbar;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th> ______________</th>
+                        <tr>
+                           
+                            <th scope="row">&brvbar;Total&brvbar;</th>
+                            <td>&brvbar;83&brvbar;</td>
+                            <td>&brvbar;90&brvbar;</td>
+                            <td>&brvbar;92&brvbar;</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </article>
+            <h2>
+                04. cabeçalho com colunas mescladas (colspan)
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                        -Vendas por Mês - 1º Trimestre-
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">&brvbar;Região&brvbar;</th>
+                            <th scope="colgroup" colspan="3">&brvbar;Trimestre 1&brvbar;</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Jan &brvbar;</th>
+                            <th scope="col">&brvbar; Fev &brvbar;</th>
+                            <th scope="col">&brvbar; Mar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Norte&brvbar;</th>
+                            <th scope="row">&brvbar;12</th>
+                            <th scope="row">&brvbar;15</th>
+                            <th scope="row">&brvbar;17</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sul&brvbar;</th>
+                            <th scope="row">&brvbar;20</th>
+                            <th scope="row">&brvbar;18</th>
+                            <th scope="row">&brvbar;19</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sudeste&brvbar;</th>
+                            <th scope="row">&brvbar;30</th>
+                            <th scope="row">&brvbar;28</th>
+                            <th scope="row">&brvbar;32</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            </section>
         </main>
-        
+    </body>
+
+    </html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Lista de exercícios - HTML   <code> &lt;table&gt; </code> 
+            </h1>  
+            <p>
+                Abaixo layout das tabelas a serem implemetadas
+            </p> 
+        </header>
+
+        <main>
+            <section>
+                <h2>
+                    01. tabela 3x3
+                </h2>
+                <article>
+                    <table>
+                        <caption>
+                            Contatos
+                        </caption>
+                        <thead> 
+                            <tr>
+                                <th scope="col">&brvbar; Nome &brvbar;</th>
+                                <th scope="col">&brvbar; Cidade &brvbar;</th>
+                                <th scope="col">&brvbar; Telefone &brvbar;</th>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Bruna &brvbar;</td>
+                                <td>&brvbar; Recife &brvbar;</td>
+                                <td> &brvbar;(081) 3333-0003 &brvbar;</td>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Diego &brvbar;</td>
+                                <td>&brvbar; Belém &brvbar;</td>
+                                <td> &brvbar;(091) 2222-0002 &brvbar;</td>
+                            </tr>
+                            <tr>
+                                <td>&brvbar; Lia &brvbar;</td>
+                                <td>&brvbar; Curitiba &brvbar;</td>
+                                <td> &brvbar;(041) 1111-0001 &brvbar;</td>
+                            </tr>
+            
+                        </thead>
+
+                    </table>
+                </article>
+            <h2>
+                02. tabela com caption, thead e tbody
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                    
+                        Tabela de Cursos Ofertados
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&brvbar; Curso &brvbar;</th>
+                            <th scope="col">&brvbar; Modalidade &brvbar;</th>
+                            <th scope="col">&brvbar; Carga Horária (h) &brvbar;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&brvbar; Rede de Computadores &brvbar;</td>
+                            <td>&brvbar; Presencial &brvbar;</td>
+                            <td>&brvbar; 80 &brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar; Desenvolvimento de Sistemas &brvbar;</td>
+                            <td>&brvbar; Híbrido &brvbar;</td>
+                            <td>&brvbar; 100 &brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar; Informática Básica &brvbar;</td>
+                            <td>&brvbar; Remoto &brvbar;</td>
+                            <td>&brvbar; 40 &brvbar;</td>
+                            
+                        </tr>
+                    
+                    </tbody>
+                    
+                </table>
+                <h2>
+                03. tabela com tfoot (totais)
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                        Resumo de Vendas (Unidades)
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Jan</th>
+                            <th scope="col">Fev</th>
+                            <th scope="col">Mar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&brvbar;Teclado&brvbar;</td>
+                            <td>&brvbar;25&brvbar;</td>
+                            <td>&brvbar;30&brvbar;</td>
+                            <td>&brvbar;28&brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar;Mouse&brvbar;</td>
+                            <td>&brvbar;40&brvbar;</td>
+                            <td>&brvbar;38&brvbar;</td>
+                            <td>&brvbar;45&brvbar;</td>
+                        </tr>
+                        <tr>
+                            <td>&brvbar;Headset&brvbar;</td>
+                            <td>&brvbar;18&brvbar;</td>
+                            <td>&brvbar;22&brvbar;</td>
+                            <td>&brvbar;19&brvbar;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th> ______________</th>
+                        <tr>
+                           
+                            <th scope="row">&brvbar;Total&brvbar;</th>
+                            <td>&brvbar;83&brvbar;</td>
+                            <td>&brvbar;90&brvbar;</td>
+                            <td>&brvbar;92&brvbar;</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <h2>
+                04. cabeçalho com colunas mescladas (colspan)
+            </h2>
+            <article>
+                <table>
+                    <caption>
+                        -Vendas por Mês - 1º Trimestre-
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">&brvbar;Região&brvbar;</th>
+                            <th scope="colgroup" colspan="3">&brvbar;Trimestre 1&brvbar;</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Jan &brvbar;</th>
+                            <th scope="col">&brvbar; Fev &brvbar;</th>
+                            <th scope="col">&brvbar; Mar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Norte&brvbar;</th>
+                            <th scope="row">&brvbar;12</th>
+                            <th scope="row">&brvbar;15</th>
+                            <th scope="row">&brvbar;17</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sul&brvbar;</th>
+                            <th scope="row">&brvbar;20</th>
+                            <th scope="row">&brvbar;18</th>
+                            <th scope="row">&brvbar;19</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sudeste&brvbar;</th>
+                            <th scope="row">&brvbar;30</th>
+                            <th scope="row">&brvbar;28</th>
+                            <th scope="row">&brvbar;32</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            </section>
+        </main>
+    </body>
+
+    </html>
