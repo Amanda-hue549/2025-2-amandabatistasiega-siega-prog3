@@ -12,7 +12,7 @@ Use o atributo controls para exibir os botões de reprodução;
 
 
 
-6. Configure o vídeo para iniciar automaticamente, sem som (muted) e repetindo (loop);
+
 7. Monte uma página completa utilizando tags semânticas (<header>, <main>,
 <section>, <article>, <footer>) com:
 ➢ Um título no <header>
@@ -71,44 +71,21 @@ compatibilidade entre navegadores;-->
 
 </body>
 
-<!--4-->
+<!--4 e 5-->
 <!--Crie uma página que exiba o vídeo escolhido com botões de play/pause e barra de
-progresso (controls);-->
+progresso (controls); 5= Coloque uma capa de imagem (poster) que aparece antes da reprodução do vídeo-->
 <body>
     <h3>Vídeo da questão 4 - Spider man.</h3>
-    <figure>
         <video controls width="480" poster="hq720.jpg" preload="none" onclick="this.play()">
             <source src="Angry-Grandpa-Shouts-OH-HELL-NAH.mp4" type="video/mp4">
             <source src="Angry-Grandpa-Shouts-OH-HELL-NAH.webm" type="video/webm">
             <track src="legenda.vtt" kind="none" srclang="pt" label="Português">
             Seu navegador não suporta o elemento de vídeo.
         </video>
-    </figure>
 
-    <button onclick="playPause()">Play/Pause</button>
+<!--6-->
+<!--6. Configure o vídeo para iniciar automaticamente, sem som (muted) e repetindo (loop)-->
 
-  <!-- Botão para mostrar/esconder controles -->
-    <button onclick="toggleControles()">Mostrar/Ocultar Barra</button>
-
-    <script>
-    const video = document.getElementById("meuVideo");
-
-    function playPause() {
-        if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    }
-
-    function toggleControles() {
-      if (video.hasAttribute("controls")) {
-        video.removeAttribute("controls");
-      } else {
-        video.setAttribute("controls", "controls");
-      }
-    }
-    </script>
 
 </body>
 </html>
