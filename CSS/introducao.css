@@ -1,0 +1,61 @@
+/*
+CSS
+Seletores CSS são usados para definir quais elementos HTML devem receber estilização:
+-Seletores de tipo
+-''        de classe
+-'' de ID
+-'' de atributos
+-'' de combinadores
+-'' de pseudoclasse
+-'' de pseudoelemento
+-Seletores universais
+
+Serão trabalhadas duas formas distintas com os seletores:
+Definição e implementação
+Chamada de seletor
+
+
+Sintaxe:
+Selecionam todos os elementos de um determinado tipo no documento HTML:
+*/
+p{color: blue;}
+
+/*O seletor de classe seleciona elementos HTML com um atributo de classe específico.
+Para selecionar elementos com uma classe específica, escreva um caractere de período(.), seguido pelo Nome classe*/
+
+.nome-classe{
+    font-weight: bold;
+}
+
+/*Seletores ID usa o atributo ID de um elemento HTML para selecionar um elemento específico;
+O ID de um elemento é único dentro dentro de uma página, de modo que o seletor de ID é usado para seleciona.*/
+
+#nome_do_id {
+    text-align: center;
+}
+
+/*Os seletores de atributo visam elementos com base em seus atributos e valores de atributos.*/
+
+input[type="text"] {
+    border-color: red;
+}
+/*Seletores pseudoclasses:
+Permite estilizar elementos com base em deu estado ou condição, como :hover ou :focus*/
+
+a:hover{
+    color: purple;
+}
+
+/*Pseudoelemento:
+Utilizado para estilizar partes específicas de um elemento, como a primeira linha ou a primeira letra.*/
+
+p::first-letter{
+    font-size: 200%;
+}
+
+/*Universais: O seletor univer é útil para aplicar um estilo a todos os elementos dentro de um contexto específico.*/
+*{
+    box-sizing: border-box;
+}
+/*<link rel="stylesheet" href="../../CSS/CSS/introducao.css">
+Forma de refewrenciar um arquivo de css externo
