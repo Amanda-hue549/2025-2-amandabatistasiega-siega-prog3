@@ -89,3 +89,86 @@ footer {
   left: 0;
   width: 100%;
 }
+
+/*contato*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.digite_nome {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="texto"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a cor da borda */
+}
+
+/* Estilo para quando o campo de texto está em foco */
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.digite_email{
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="texto"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a cor da borda */
+}
+
+/* Estilo para quando o campo de texto está em foco */
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);}    
