@@ -17,7 +17,7 @@ header {
 }
 
 header .logo {
-  display: flex;
+  display: flex; 
   align-items: center;
   gap: 10px;
 }
@@ -171,4 +171,6 @@ input[type="texto"] {
 input[type="text"]:focus {
     border-color: #007bff;
     outline: none; /* Remove o contorno padrão do navegador */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);}    
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);}
+
+
