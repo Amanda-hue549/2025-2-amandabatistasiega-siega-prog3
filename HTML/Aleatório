@@ -1,0 +1,11 @@
+<?php
+echo '
+<h2> Tabela aleatória </h2>
+<h3> Leitura de tabelas </h3>
+<table border 1>
+
+    <tr>
+        <td>Bleh</td>
+        <td>Uque</td>
+
+'
