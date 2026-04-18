@@ -1,11 +1,37 @@
 <?php
 echo '
-<h2> Tabela aleatória </h2>
-<h3> Leitura de tabelas </h3>
+<h2> IFSC - Programação IV IOT </h2>
+<h3> Listagem de leituras </h3>
 <table border 1>
 
     <tr>
-        <td>Bleh</td>
-        <td>Uque</td>
+        <td>Id leitura</td>
+        <td>Id sensor</td>
+        <td>Id mac</td>
+        <td>Datas leituras</td>
+        <td>Hora leitura</td>
 
-'
+    </tr>
+';
+
+try{
+    $sql = "SELECT leitura.idleitura,sensor.nome,mac.nome,leitura.valor,leitura.dataleitura,leitura.horaleitura FROM leitura,sensor,mac 
+    where leitura.mac_idmac = mac.idmac and leitura.sensor_idsensor = sensor.idsensor";
+    $resultado = $conn->query($sql);
+
+    foreach($resultado as $row){
+        echo"<tr><td> $row[0] </td>";
+        echo"<tr><td> $row[1] </td>";
+        echo"<tr><td> $row[2] </td>";
+        echo"<tr><td> $row[3] </td>";
+        echo"<tr><td> $row[4] </td>";
+        echo"<tr><td> $row[5] </td></tr>";
+        }echo "</table>";
+        
+}
+
+catch(PDOExeption $erro){
+    echo $erro->getMessage(); 
+}
+
+?>
